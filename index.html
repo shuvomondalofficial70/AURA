@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA</title>
+
+    <link rel="stylesheet" href="./CSS/Style.css">
+
+    <link rel="stylesheet" href="./CSS/media.css">
+
+
+</head>
+
+<body>
+
+
+    <header class="main-header" id="navbar">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="#">AURA<span>.</span></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#work" class="nav-item">Portfolio</a></li>
+                <li><a href="#philosophy" class="nav-item">Philosophy</a></li>
+                <li><a href="#process" class="nav-item">Process</a></li>
+                <li><a href="#journal" class="nav-item">Journal</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="#contact" class="btn-ghost">Start a Project</a>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <span class="hero-subtitle">Bespoke Interior Architecture</span>
+            <h1 class="hero-title">
+                Crafting Spaces <br>
+                <span class="serif-italic">That Breathe.</span>
+            </h1>
+            <p class="hero-description">
+                From minimalist penthouses to soulful heritage homes, we design interiors that balance raw texture with
+                refined elegance.
+            </p>
+
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn-primary">View Portfolio</a>
+                <a href="#process" class="btn-link">Our Process &rarr;</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to Explore</span>
+        </div>
+    </section>
+
+
+
+
+    <section class="philosophy reveal" id="philosophy">
+        <div class="philosophy-container">
+            <div class="philosophy-image-box">
+                <img src="./IMAGE/philosophy-img.avif" alt="Minimalist Interior" class="main-phil-img">
+                <div class="accent-box"></div>
+            </div>
+
+            <div class="philosophy-content">
+                <h2 class="section-title">The Essence <br><span class="serif-italic">of Space.</span></h2>
+
+                <div class="philosophy-grid">
+                    <div class="phil-item">
+                        <span class="phil-number">01</span>
+                        <h3>Intentionality</h3>
+                        <p>Every line we draw and every texture we select serves a purpose. We don't just fill rooms; we
+                            curate experiences.</p>
+                    </div>
+
+                    <div class="phil-item">
+                        <span class="phil-number">02</span>
+                        <h3>Materiality</h3>
+                        <p>We believe in the honesty of materials—raw stone, hand-woven linens, and reclaimed wood that
+                            tells a story.</p>
+                    </div>
+
+                    <div class="phil-item">
+                        <span class="phil-number">03</span>
+                        <h3>Longevity</h3>
+                        <p>Trends fade, but proportions are eternal. Our designs are built to evolve with you through
+                            the decades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="portfolio reveal" id="work">
+        <div class="portfolio-header">
+            <h2 class="section-title">Selected <span class="serif-italic">Works</span></h2>
+
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="minimalist">Minimalist</button>
+            </div>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="project-card large residential" data-category="residential">
+                <div class="project-image">
+                    <img src="./IMAGE/portfolio-img-1.avif" alt="Modern Villa">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <span>Zurich, Switzerland</span>
+                            <h3>The Glass Pavilion</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card commercial" data-category="commercial">
+                <div class="project-image">
+                    <img src="./IMAGE/portfolio-img-2.avif" alt="Office Design">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <span>London, UK</span>
+                            <h3>Monolith Studio</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card minimalist" data-category="minimalist">
+                <div class="project-image">
+                    <img src="./IMAGE/portfolio-img-3.avif" alt="Kitchen Design">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <span>Oslo, Norway</span>
+                            <h3>Nordic Kitchen</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card wide residential" data-category="residential">
+                <div class="project-image">
+                    <img src="./IMAGE/portfolio-img-4.avif" alt="Master Bedroom">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <span>Milan, Italy</span>
+                            <h3>Velvet Suite</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="comparison-section reveal" id="transformation">
+        <div class="comparison-header">
+            <h2 class="section-title">The <span class="serif-italic">Transformation</span></h2>
+            <p>Drag the slider to see how we redefined this heritage loft.</p>
+        </div>
+
+        <div class="comparison-slider">
+            <div class="image-before">
+                <img src="./IMAGE/comparison-img-1.avif" alt="Before Interior">
+                <span class="label before-label">Original Space</span>
+            </div>
+
+            <div class="image-after">
+                <img src="./IMAGE/comparison-img-2.avif" alt="After Interior">
+                <span class="label after-label">Curated Design</span>
+            </div>
+
+            <input type="range" min="0" max="100" value="50" class="slider-input" id="compare-slider">
+
+            <div class="slider-button">
+                <div class="arrow-left"></div>
+                <div class="arrow-right"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="process-section reveal" id="process">
+        <div class="process-container">
+            <div class="process-intro">
+                <h2 class="section-title">The <span class="serif-italic">Method</span></h2>
+                <p>From the first sketch to the final styling, our process is a meticulous dance of creativity and
+                    precision.</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="progress-track">
+                    <div class="progress-bar" id="process-bar"></div>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card active" data-step="1">
+                        <div class="step-dot"></div>
+                        <span class="step-num">01</span>
+                        <h3>Immersion</h3>
+                        <p>We begin by understanding your rituals, tastes, and how you move through space.</p>
+                    </div>
+
+                    <div class="step-card" data-step="2">
+                        <div class="step-dot"></div>
+                        <span class="step-num">02</span>
+                        <h3>Curation</h3>
+                        <p>Moodboarding textures, lighting, and materials to define the soul of the project.</p>
+                    </div>
+
+                    <div class="step-card" data-step="3">
+                        <div class="step-dot"></div>
+                        <span class="step-num">03</span>
+                        <h3>Realization</h3>
+                        <p>Precise execution where our technical blueprints transform into your physical reality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="materiality-section reveal" id="materials">
+        <div class="materiality-container">
+            <div class="materiality-text">
+                <h2 class="section-title">The Palette of <br><span class="serif-italic">Senses</span></h2>
+                <p>We believe interiors should be felt, not just seen. Our material library is a curated collection of
+                    raw honesty and refined finishes.</p>
+                <ul class="material-list">
+                    <li>Brushed Brass</li>
+                    <li>Italian Carrara</li>
+                    <li>Smoked Oak</li>
+                    <li>Hand-woven Linen</li>
+                </ul>
+            </div>
+
+            <div class="moodboard">
+                <div class="mood-item p-1" data-speed="0.05">
+                    <img src="./IMAGE/moodboard-img-1.jpeg" alt="Marble Texture">
+                    <span class="mat-label">Carrara</span>
+                </div>
+                <div class="mood-item p-2" data-speed="-0.08">
+                    <img src="./IMAGE/moodboard-img-2.avif" alt="Dark Wood">
+                    <span class="mat-label">Smoked Oak</span>
+                </div>
+                <div class="mood-item p-3" data-speed="0.1">
+                    <img src="./IMAGE/moodboard-img-3.jpeg" alt="Metal finish">
+                    <span class="mat-label">Brushed Brass</span>
+                </div>
+                <div class="mood-item p-4" data-speed="-0.03">
+                    <img src="./IMAGE/moodboard-img-4.avif" alt="Textile">
+                    <span class="mat-label">Linen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="consultation-section reveal" id="consult">
+        <div class="consult-container">
+            <div class="room-viewer">
+                <div class="room-image-container">
+                    <img src="./IMAGE/consultation-img-1.jpeg" alt="Room View" id="active-room-img">
+                    <div class="overlay-glow" id="glow"></div>
+                </div>
+                <div class="room-caption">
+                    <span id="mood-label">Golden Hour</span> — <span id="mood-desc">Warm, inviting, and
+                        atmospheric.</span>
+                </div>
+            </div>
+
+            <div class="consult-controls">
+                <h2 class="section-title">Design <br><span class="serif-italic">Consultation</span></h2>
+                <p>Select a lighting profile to see how atmosphere dictates the soul of a space.</p>
+
+                <div class="mood-selector">
+                    <div class="mood-option active" data-mood="golden" data-img="IMAGE/consultation-img-2.jpeg"
+                        data-color="rgba(255, 170, 0, 0.15)">
+                        <span class="swatch golden"></span>
+                        <div class="mood-text">
+                            <h4>Golden Hour</h4>
+                            <p>2700K Warmth</p>
+                        </div>
+                    </div>
+
+                    <div class="mood-option" data-mood="minimal" data-img="IMAGE/consultation-img-3.jpeg"
+                        data-color="rgba(255, 255, 255, 0.05)">
+                        <span class="swatch minimal"></span>
+                        <div class="mood-text">
+                            <h4>Pure Minimal</h4>
+                            <p>Daylight Neutral</p>
+                        </div>
+                    </div>
+
+                    <div class="mood-option" data-mood="noir" data-img="IMAGE/consultation-img-4.jpeg"
+                        data-color="rgba(0, 50, 255, 0.05)">
+                        <span class="swatch noir"></span>
+                        <div class="mood-text">
+                            <h4>Midnight Noir</h4>
+                            <p>Low-light Accent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn-primary">Book This Mood</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="journal-section reveal" id="journal">
+        <div class="journal-header">
+            <h2 class="section-title">The <span class="serif-italic">Journal</span></h2>
+            <a href="#" class="view-all">All Perspectives &rarr;</a>
+        </div>
+
+        <div class="journal-grid">
+            <article class="journal-card" data-tilt>
+                <div class="journal-img-wrapper">
+                    <img src="./IMAGE/journal-img-1.jpeg" alt="Lighting design">
+                    <div class="category-tag">Light</div>
+                </div>
+                <div class="journal-meta">
+                    <span class="date">Feb 2026</span>
+                    <h3>The Art of Natural Illumination</h3>
+                    <p>How we harness the shifting path of the sun to define interior volumes.</p>
+                    <a href="#" class="read-more">Read Entry</a>
+                </div>
+            </article>
+
+            <article class="journal-card staggered" data-tilt>
+                <div class="journal-img-wrapper">
+                    <img src="./IMAGE/journal-img-2.jpeg" alt="Furniture curation">
+                    <div class="category-tag">Curation</div>
+                </div>
+                <div class="journal-meta">
+                    <span class="date">Jan 2026</span>
+                    <h3>Sourcing the Soul: Rare Finds</h3>
+                    <p>A look into our global search for furniture that tells a multi-generational story.</p>
+                    <a href="#" class="read-more">Read Entry</a>
+                </div>
+            </article>
+
+            <article class="journal-card" data-tilt>
+                <div class="journal-img-wrapper">
+                    <img src="./IMAGE/journal-img-3.avif" alt="Minimalism">
+                    <div class="category-tag">Theory</div>
+                </div>
+                <div class="journal-meta">
+                    <span class="date">Dec 2025</span>
+                    <h3>The Psychology of Minimalism</h3>
+                    <p>Exploring the boundary between essential living and emotional warmth.</p>
+                    <a href="#" class="read-more">Read Entry</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="investment-section reveal" id="investment">
+        <div class="investment-header">
+            <h2 class="section-title">Investment <span class="serif-italic">Models</span></h2>
+            <p>Transparent structures tailored to the scale of your vision.</p>
+
+            <div class="pricing-toggle">
+                <span class="toggle-label active" id="label-fixed">Fixed Project Fee</span>
+                <label class="switch">
+                    <input type="checkbox" id="price-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label" id="label-percent">Managed %</span>
+            </div>
+        </div>
+
+        <div class="investment-grid">
+            <div class="tier-card">
+                <div class="tier-inner">
+                    <span class="tier-name">The Concept</span>
+                    <div class="tier-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-fixed="4,500" data-percent="5">4,500</span>
+                    </div>
+                    <ul class="tier-features">
+                        <li>3D Spatial Visualization</li>
+                        <li>Material Palette Curation</li>
+                        <li>Furniture Procurement List</li>
+                        <li class="disabled">On-site Supervision</li>
+                    </ul>
+                    <a href="#contact" class="btn-tier">Inquire Now</a>
+                </div>
+            </div>
+
+            <div class="tier-card featured">
+                <div class="tier-inner">
+                    <div class="popular-tag">Most Requested</div>
+                    <span class="tier-name">Full Residency</span>
+                    <div class="tier-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-fixed="12,000" data-percent="12">12,000</span>
+                    </div>
+                    <ul class="tier-features">
+                        <li>End-to-End Design</li>
+                        <li>Custom Cabinetry Blueprints</li>
+                        <li>Contractor Liaison</li>
+                        <li>White-Glove Installation</li>
+                    </ul>
+                    <a href="#contact" class="btn-tier featured-btn">Inquire Now</a>
+                </div>
+            </div>
+
+            <div class="tier-card">
+                <div class="tier-inner">
+                    <span class="tier-name">The Estate</span>
+                    <div class="tier-price">
+                        <span class="currency"></span>
+                        <span class="amount" data-fixed="Custom" data-percent="15+">Custom</span>
+                    </div>
+                    <ul class="tier-features">
+                        <li>Multi-Structure Cohesion</li>
+                        <li>Landscape Integration</li>
+                        <li>Global Sourcing Art/Antiques</li>
+                        <li>Priority Timeline</li>
+                    </ul>
+                    <a href="#contact" class="btn-tier">Contact for Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer-section reveal" id="contact">
+        <div class="footer-container">
+            <div class="contact-area">
+                <h2 class="section-title">Start Your <br><span class="serif-italic">Inquiry</span></h2>
+                <p class="contact-sub">Share your vision with us. We respond to all curated inquiries within 24 hours.
+                </p>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="project-type" name="project-type">
+                            <option value="" disabled selected>Project Type</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="bespoke">Bespoke Furniture</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="A brief about your space"
+                            rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <span class="btn-text">Send Invitation</span>
+                        <div class="btn-loader"></div>
+                    </button>
+                </form>
+                <div id="form-success" class="form-success-msg">
+                    <h3 class="serif-italic">Thank You.</h3>
+                    <p>Your message has been received. We will be in touch shortly.</p>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <a href="#">AURA<span>.</span></a>
+                </div>
+
+                <div class="footer-links-grid">
+                    <div class="link-col">
+                        <h4>Navigation</h4>
+                        <a href="#work">Portfolio</a>
+                        <a href="#philosophy">Philosophy</a>
+                        <a href="#journal">Journal</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Social</h4>
+                        <a href="#">Instagram</a>
+                        <a href="#">Pinterest</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Office</h4>
+                        <p>88 Design District</p>
+                        <p>Milan, Italy</p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Aura Interiors. All Rights Reserved.</p>
+                    <p>Designed By Shuvo....</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="./JAVASCRIPT/index.js"></script>
+
+</body>
+
+</html>

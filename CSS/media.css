@@ -1,0 +1,337 @@
+@media screen and (max-width: 1024px) {
+
+    /* 1. Show the Menu Button */
+    .mobile-menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .mobile-menu-btn span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        transition: 0.3s ease;
+    }
+
+    /* 2. Transform Nav Links into a Full-Screen Overlay */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* Hidden off-screen */
+        width: 100%;
+        height: 100vh;
+        background: #070707;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        right: 0;
+        /* Slide in */
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+        font-family: 'Playfair Display', serif;
+    }
+
+    /* 3. Adjust Navigation Bar Layout */
+    .nav-container {
+        justify-content: space-between;
+        padding: 20px 5%;
+    }
+
+    .nav-cta {
+        display: none;
+        /* Hide button in nav bar on tablet */
+    }
+
+    .nav-links .btn-ghost {
+        display: block;
+        /* Show button inside the slide-in menu instead */
+        margin-top: 20px;
+    }
+
+    /* 4. Animate Hamburger to 'X' when active */
+    .mobile-menu-btn.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .mobile-menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-btn.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+
+
+/* --- TABLET VIEW (992px and below) --- */
+@media screen and (max-width: 992px) {
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .section-title {
+        font-size: 2.8rem;
+    }
+
+    /* Philosophy Section */
+    .philosophy-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    /* Portfolio Grid */
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .project-card.large,
+    .project-card.wide {
+        grid-column: span 2;
+    }
+
+    /* Journal Grid */
+    .journal-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .journal-card.staggered {
+        margin-top: 0;
+    }
+
+    /* Investment Tiers */
+    .investment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tier-card.featured {
+        grid-column: span 2;
+        order: -1;
+        /* Keep featured at the top */
+        transform: scale(1);
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+/* --- MOBILE VIEW (768px and below) --- */
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    /* Navigation */
+    .nav-links,
+    .nav-cta {
+        display: none;
+        /* Usually handled by a JS mobile menu toggle */
+    }
+
+    /* 1. Header Container: Keep logo and hamburger on opposite ends */
+    .nav-container {
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* 2. CTA Button: Usually too bulky for small phones, we hide it or move it */
+    .nav-cta {
+        display: none;
+    }
+
+    /* 3. The Hamburger Button: Visual setup */
+    .mobile-menu-btn {
+        display: flex;
+        /* Show the button now */
+        flex-direction: column;
+        gap: 5px;
+        z-index: 1001;
+        /* Stay above the menu drawer */
+    }
+
+    .mobile-menu-btn span {
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+        transition: 0.4s ease;
+        /* Smooth "X" animation */
+    }
+
+    /* 4. The Nav Links: Transform into a vertical drawer */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* Start hidden off-screen to the right */
+        width: 100%;
+        /* Full screen width */
+        height: 100vh;
+        /* Full screen height */
+        background-color: #070707;
+        /* Match your dark theme */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        /* Professional 'snap' feel */
+        z-index: 1000;
+    }
+
+    /* 5. Logic for when JS toggles the 'active' class */
+    .nav-links.active {
+        right: 0;
+        /* Slide into view */
+    }
+
+    /* 6. Hamburger animation: Transforms bars into an 'X' */
+    .mobile-menu-btn.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .mobile-menu-btn.active span:nth-child(2) {
+        opacity: 0;
+        /* Hide middle bar */
+    }
+
+    .mobile-menu-btn.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Philosophy Items */
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card.large,
+    .project-card.wide {
+        grid-column: span 1;
+    }
+
+    .filter-controls {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 10px;
+        justify-content: flex-start;
+    }
+
+    /* Comparison Slider */
+    .comparison-slider {
+        height: 300px;
+    }
+
+    /* Process Steps */
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .progress-track {
+        display: none;
+    }
+
+    /* Materiality Moodboard */
+    .materiality-container {
+        grid-template-columns: 1fr;
+    }
+
+    .moodboard {
+        height: 400px;
+        /* Fixed height for mobile parallax */
+    }
+
+    /* Consultation */
+    .consult-container {
+        grid-template-columns: 1fr;
+    }
+
+    .room-image-container {
+        height: 350px;
+    }
+
+    /* Journal */
+    .journal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Investment Tiers */
+    .investment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tier-card.featured {
+        grid-column: span 1;
+    }
+
+    /* Footer Links */
+    .footer-links-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/* --- SMALL MOBILE (480px and below) --- */
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .btn-primary,
+    .btn-submit {
+        width: 100%;
+        text-align: center;
+    }
+}
