@@ -157,7 +157,7 @@ body {
     background: #0a0a0a;
     /* Fallback color */
     /* Replace URL with your high-end interior shot */
-    background-image: url('/IMAGE/hero-img.avif');
+    background-image: url(../IMAGE/hero-img.avif);
     background-size: cover;
     background-position: center;
     padding: 0 8%;
